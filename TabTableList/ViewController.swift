@@ -9,8 +9,6 @@
 import UIKit
 import SnapKit
 import SwifterSwift
-import ReactiveCocoa
-import ReactiveSwift
 
 class ViewController: UIViewController {
     
@@ -19,6 +17,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.isHidden = true
         
         tabScrollView = {
             let tabScrollView = TabScrollView(frame: view.bounds)
